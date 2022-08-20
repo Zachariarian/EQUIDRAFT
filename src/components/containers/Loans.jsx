@@ -19,7 +19,7 @@ class Loans extends React.Component {
         return (
             <div className={classes.root}>
                 <Typography variant="h4">
-                    Unimplemented page
+                    Please login/Sign Up to continue!
                 </Typography>
             </div>
         );

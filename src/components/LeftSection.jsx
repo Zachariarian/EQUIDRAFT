@@ -62,7 +62,7 @@ const navs = [
         link: "apply"
     },
     {
-        name: "My loans",
+        name: "My Overdraft",
         link: "loans"
     },
     {
@@ -103,7 +103,7 @@ const LeftSection = (props) => {
             <Divider className={classes.divider}/>
             <br/>
             <Typography component="h5" variant="h5" className={classes.whyUs}>
-                Why choose us?
+                Why choose Equidraft?
             </Typography>
             <br/>
             {
