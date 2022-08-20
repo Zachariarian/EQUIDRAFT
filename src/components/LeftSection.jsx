@@ -66,19 +66,14 @@ const navs = [
         link: "loans"
     },
     {
-        name: "Signup",
+        name: "Signup/Login",
         link: "signup"
-    },
-    {
-        name: "Login",
-        link: "login"
     }
 ];
 
 const whyUs = [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "With a higher demand for overdraft facilities among a huge Kenyan population, we aim to come up with an Equity Overdraft facility to offer instant overdraft to our clients. The product will be available to all Equity customers with active bank accounts.",
+    "The product will be open to individuals and SMEs.",
 ];
 
 const LeftSection = (props) => {

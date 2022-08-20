@@ -1,9 +1,9 @@
 import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 import createStyles from "@material-ui/core/styles/createStyles";
-import Heading from "../accountBox/Heading";
+import Heading from "./Heading";
 import {connect} from "react-redux";
-import PredictorForm from "../containers/PredictorForm";
+import PredictorForm from "./containers/PredictorForm";
 
 const styles = theme => createStyles({
     root: {

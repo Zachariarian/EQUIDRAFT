@@ -1,18 +1,18 @@
 import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 import createStyles from "@material-ui/core/styles/createStyles";
-import Heading from "../accountBox/Heading";
+import Heading from "../Heading";
 import Step from "@material-ui/core/Step";
 import Stepper from "@material-ui/core/Stepper";
 import StepButton from "@material-ui/core/StepButton";
-import PersonalInfo from "../accountBox/PersonalInfo";
+import PersonalInfo from "../PersonalInfo";
 import {changeModel, changeStep, checkErrorsAndForward, setConfirmed} from "../actions/ApplicationAction";
 import {connect} from "react-redux";
-import BusinessDetails from "../accountBox/BusinessDetails";
-import FinalSubmit from "../accountBox/FinalSubmit";
+import BusinessDetails from "../BusinessDetails";
+import FinalSubmit from "../FinalSubmit";
 import Fab from "@material-ui/core/Fab";
 import Icon from "@material-ui/core/Icon";
-import Success from "../accountBox/Success";
+import Success from "../Success";
 
 const styles = theme => createStyles({
     root: {

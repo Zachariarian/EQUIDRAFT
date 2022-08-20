@@ -3,12 +3,13 @@ import createStyles from "@material-ui/core/styles/createStyles";
 import withStyles from "@material-ui/core/styles/withStyles";
 import {Route} from "react-router-dom";
 import Predictor from "./predictor";
-import Application from "../containers/Application";
+import Application from "./containers/Application";
 import withWidth from "@material-ui/core/withWidth";
-import Loans from "../containers/Loans";
+import Loans from "./containers/Loans";
 import MobileHeader from "./MobileHeader";
-import { LoginForm } from "../containers/LoginForm";
-import { SignupForm } from "../containers/SignupForm";
+//import LoginForm from "./accountBox/LoginForm";
+//import SignupForm from "./accountBox/signupForm";
+import Appy from "./containers/Appy";
 
 
 const styles = theme => createStyles({
@@ -23,9 +24,9 @@ const RightSection = (props) => {
         <div>
             <MobileHeader isOpen={props.isDrawerOpen} toggleDrawer={props.toggleDrawer}/>
             <div className={classes.root}>
-                <Route path="/" exact element={LoginForm} width={props.width}/>
-                <Route path="/login" element={LoginForm} />
-                <Route path="/signup" element={SignupForm} />
+                <Route path="/" exact component={Appy} width={props.width}/>
+                <Route path="/login" component={Appy} />
+                <Route path="/signup" component={Appy} />
                 <Route path="/predict" component={Predictor} width={props.width}/>
                 <Route path="/apply" component={Application} />
                 <Route path="/loans" component={Loans} />

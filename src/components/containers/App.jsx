@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import Grid from "@material-ui/core/Grid";
 import Hidden from "@material-ui/core/Hidden";
-import LeftSection from "../accountBox/LeftSection";
-import RightSection from "../accountBox/RightSection";
+import LeftSection from "../LeftSection";
+import RightSection from "../RightSection";
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 import blue from "@material-ui/core/es/colors/blue";
 import {connect} from "react-redux";

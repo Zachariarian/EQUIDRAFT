@@ -1,6 +1,6 @@
 import React, {Fragment} from "react";
 import {connect} from "react-redux";
-import SliderControl from "../accountBox/SliderControl";
+import SliderControl from "../SliderControl";
 import Grid from "@material-ui/core/Grid";
 import createStyles from "@material-ui/core/styles/createStyles";
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -10,7 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import {withRouter} from "react-router-dom";
 import {changeLoanType, changeModel, getInterest} from "../actions/PredictorAction";
-import CircularGraph from "../accountBox/CircularGraph";
+import CircularGraph from "../CircularGraph";
 import withWidth from "@material-ui/core/withWidth";
 import Icon from "@material-ui/core/es/Icon/Icon";
 const styles = theme => createStyles({
