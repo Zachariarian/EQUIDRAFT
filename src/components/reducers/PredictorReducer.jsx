@@ -20,7 +20,7 @@ const defaultState = {
     },
     values: {
         loanType: {
-            title: "Car",
+            title: "Personal",
             icon: "directions_car"
         },
         loanAmount: 1000,

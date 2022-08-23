@@ -12,6 +12,7 @@ import { AccountContext } from "./accountContext";
 
 export function LoginForm(props) {
   const { switchToSignup } = useContext(AccountContext);
+  const { switchToNow } = useContext(AccountContext);
 
   return (
     <BoxContainer>
@@ -26,7 +27,7 @@ export function LoginForm(props) {
         </BoldLink>
       </MutedLink>
       <Marginer direction="vertical" margin="1.6em" />
-      <SubmitButton type="submit">Signin</SubmitButton>
+      <SubmitButton type="submit" onClick={switchToNow}>Signin</SubmitButton>
       <Marginer direction="vertical" margin="1em" />
       <MutedLink href="#">
         Don't have an account?{" "}

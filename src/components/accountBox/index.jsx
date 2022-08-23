@@ -4,6 +4,7 @@ import { LoginForm } from "./loginForm";
 import { motion } from "framer-motion";
 import { AccountContext } from "./accountContext";
 import { SignupForm } from "./signupForm";
+import Apply from "../containers/PredictorForm"
 
 const BoxContainer = styled.div`
   width: 280px;
@@ -122,7 +123,21 @@ export function AccountBox(props) {
     }, 400);
   };
 
-  const contextValue = { switchToSignup, switchToSignin };
+  const switchToApply = () => {
+    playExpandingAnimation();
+    setTimeout(() => {
+      setActive("apply");
+    }, 400);
+  };
+
+  const switchToNow = () => {
+    playExpandingAnimation();
+    setTimeout(() => {
+      setActive("now");
+    }, 400);
+  };
+
+  const contextValue = { switchToSignup, switchToSignin, switchToApply, switchToNow };
 
   return (
     <AccountContext.Provider value={contextValue}>
@@ -148,10 +163,19 @@ export function AccountBox(props) {
               <SmallText>Please sign-up to continue!</SmallText>
             </HeaderContainer>
           )}
-        </TopContainer>
+          {active === "apply" && (
+            <HeaderContainer>
+              <HeaderText>Login to Equidraft</HeaderText>
+              <HeaderText>Account</HeaderText>
+              <SmallText>Login to continue!</SmallText>
+            </HeaderContainer>
+          )}
+          </TopContainer>
         <InnerContainer>
           {active === "signin" && <LoginForm />}
           {active === "signup" && <SignupForm />}
+          {active === "apply" && <LoginForm />}
+          {active === "now" && <Apply />}
         </InnerContainer>
       </BoxContainer>
     </AccountContext.Provider>
