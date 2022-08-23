@@ -40,7 +40,6 @@ const FinalSubmit = (props) => {
                         />
 
                         <Typography variant="subtitle1" className={classes.text}>
-                        
                         </Typography>
                         Please Read & Accept <a href="https://equitygroupholdings.com/ke/terms-and-conditions">  Terms and conditions</a>
                         <br/>

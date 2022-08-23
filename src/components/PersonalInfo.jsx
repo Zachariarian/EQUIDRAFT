@@ -102,6 +102,61 @@ const PersonalInfo = (props) => {
                             onChange={(event) => props.changeModel("personal", "mobile", event.target.value)}
                             error={props.errors.mobile !== ""}
                         />
+                        <TextField
+                            id="id"
+                            label="ID Number"
+                            className={classes.textField}
+                            margin="normal"
+                            variant="outlined"
+                            value={props.id}
+                            onChange={(event) => props.changeModel("personal", "id", event.target.value)}
+                            error={props.errors.mobile !== ""}
+                        />
+                    </Grid>
+                    <Grid item sm={12}>
+                    <TextField
+                            id="account"
+                            label="Equity A/C No"
+                            className={classes.textField}
+                            margin="normal"
+                            variant="outlined"
+                            value={props.account}
+                            onChange={(event) => props.changeModel("personal", "account", event.target.value)}
+                            aria-describedby="component-error-text"
+                            error={props.errors.firstName !== ""}
+                        />
+                        <TextField
+                            id="nos"
+                            label="Repayment period(days)"
+                            className={classes.textField}
+                            margin="normal"
+                            variant="outlined"
+                            value={props.nos}
+                            onChange={(event) => props.changeModel("personal", "nos", event.target.value)}
+                            error={props.errors.lastName !== ""}
+                        />
+                        </Grid>
+                    <Grid item sm={12}>
+                    <TextField
+                    id="income"
+                    label="Current Income KES"
+                    className={classes.textField}
+                    margin="normal"
+                    variant="outlined"
+                    value={props.income}
+                    onChange={(event) => props.changeModel("personal", "income", event.target.value)}
+                    error={props.errors.lastName !== ""}
+                />
+                        <TextField
+                            id="overdraft"
+                            label="Overdraft Amount KES"
+                            className={classes.textField}
+                            margin="normal"
+                            variant="outlined"
+                            value={props.overdraft}
+                            onChange={(event) => props.changeModel("personal", "overdraft", event.target.value)}
+                            error={props.errors.lastName !== ""}
+                        />
                     </Grid>
                     <Grid item sm={12}>
                         <TextField

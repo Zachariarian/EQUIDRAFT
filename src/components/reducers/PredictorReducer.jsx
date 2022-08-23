@@ -5,23 +5,20 @@ const defaultState = {
     data: {
         loanTypes: [
             {
-                title: "Personal",
-                icon: "directions_car"
+                title: "Personal"
             },
             {
-                title: "Small Enterprise",
-                icon: "home"
+                title: "Small Enterprise"
             },
             {
-                title: "Medium Enterprise",
-                icon: "school"
+                title: "Medium Enterprise"
             }
         ],
     },
     values: {
         loanType: {
             title: "Personal",
-            icon: "directions_car"
+            
         },
         loanAmount: 1000,
         termLength: 12,
