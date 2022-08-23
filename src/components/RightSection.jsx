@@ -5,7 +5,7 @@ import {Route} from "react-router-dom";
 import Predictor from "./predictor";
 import Application from "./containers/Application";
 import withWidth from "@material-ui/core/withWidth";
-import Loans from "./containers/Loans";
+import Loans from "./containers/Overdraft";
 import MobileHeader from "./MobileHeader";
 //import LoginForm from "./accountBox/LoginForm";
 //import SignupForm from "./accountBox/signupForm";
@@ -29,7 +29,7 @@ const RightSection = (props) => {
                 <Route path="/signup" component={Appy} />
                 <Route path="/predict" component={Predictor} width={props.width}/>
                 <Route path="/apply" component={Application} />
-                <Route path="/loans" component={Loans} />
+                <Route path="/overdraft" component={Loans} />
             </div>
         </div>
     );
