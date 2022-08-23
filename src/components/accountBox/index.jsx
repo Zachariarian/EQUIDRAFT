@@ -4,7 +4,7 @@ import { LoginForm } from "./loginForm";
 import { motion } from "framer-motion";
 import { AccountContext } from "./accountContext";
 import { SignupForm } from "./signupForm";
-import Apply from "../containers/PredictorForm"
+import Apply from "../containers/Option"
 
 const BoxContainer = styled.div`
   width: 280px;
@@ -168,6 +168,13 @@ export function AccountBox(props) {
               <HeaderText>Login to Equidraft</HeaderText>
               <HeaderText>Account</HeaderText>
               <SmallText>Login to continue!</SmallText>
+            </HeaderContainer>
+          )}
+          {active === "now" && (
+            <HeaderContainer>
+              <HeaderText>Hello, Welcome to</HeaderText>
+              <HeaderText>Equidraft</HeaderText>
+              <SmallText>Get Started to continue!</SmallText>
             </HeaderContainer>
           )}
           </TopContainer>

@@ -63,7 +63,7 @@ const navs = [
     },
     {
         name: "My Overdraft",
-        link: "loans"
+        link: "overdraft"
     },
     {
         name: "Signup/Login",
