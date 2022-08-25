@@ -21,7 +21,7 @@ const defaultState = {
             
         },
         loanAmount: 1000,
-        termLength: 12,
+        termLength: 1,
         interestRate: null,
         monthlyPayment: null
     }
