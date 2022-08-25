@@ -96,7 +96,7 @@ const CircularGraph = props => {
                                 </div>
                                 <div className={classes.content}>
                                     <Typography variant="h5">
-                                        {"$ "+props.monthlyPayment*props.termLength }
+                                        {"KES "+props.monthlyPayment*props.termLength }
                                     </Typography>
                                     <Typography variant="subtitle1" align={"center"}>
                                         Total
@@ -113,10 +113,10 @@ const CircularGraph = props => {
                                     </div>
                                     <div className={classes.monthlyPayment}>
                                         <Typography variant="subtitle1" className={classes.bold}>
-                                            {"$ "+props.monthlyPayment }
+                                            {"KES "+props.monthlyPayment }
                                         </Typography>
                                         <Typography variant="subtitle1" align={"center"}>
-                                            Monthly
+                                            Daily
                                         </Typography>
                                     </div>
                                 </div>
