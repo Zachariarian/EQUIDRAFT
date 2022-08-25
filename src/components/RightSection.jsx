@@ -11,7 +11,7 @@ import MobileHeader from "./MobileHeader";
 //import SignupForm from "./accountBox/signupForm";
 import Appy from "./containers/Appy";
 
-
+//import Logo from "../equity-bank-logo.png"
 const styles = theme => createStyles({
     root: {
         padding: 20,
