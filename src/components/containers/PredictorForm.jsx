@@ -70,7 +70,7 @@ class PredictorForm extends React.Component {
                 <Grid container className={classes.root} spacing={0}>
                     <Grid item xs={12} md={6} className={classes.controls}>
                         <Typography variant="h6" className={classes.label}>
-                            Loan Type
+                            Overdraft Type
                         </Typography>
                         <div className={classes.toggleContainer}>
                             <ToggleButtonGroup value={this.props.values.loanType.title} exclusive className={classes.buttonGroup}>
