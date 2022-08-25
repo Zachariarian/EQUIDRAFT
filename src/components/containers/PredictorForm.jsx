@@ -90,7 +90,7 @@ class PredictorForm extends React.Component {
                         <SliderControl min={500} max={5000} step={5} prefix="KES" value={this.props.values.loanAmount} onChange={(value) => this.props.changeModel("loanAmount", value)}>
                             Equidraft Amount
                         </SliderControl>
-                        <SliderControl min={1} max={60} step={1} value={this.props.values.termLength} onChange={(value) => this.props.changeModel("termLength", value)}>
+                        <SliderControl min={1} max={24} step={1} value={this.props.values.termLength} onChange={(value) => this.props.changeModel("termLength", value)}>
                             Term Length (Days)
                         </SliderControl>
 
