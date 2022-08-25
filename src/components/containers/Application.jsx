@@ -54,7 +54,7 @@ class Application extends React.Component {
 
         return (
             <div className={classes.root}>
-                <Heading>Application</Heading>
+                <Heading>Equidraft Application</Heading>
                 <Stepper alternativeLabel nonLinear activeStep={this.props.activeStep}>
                     {steps.map((label, index) => {
                         return (
